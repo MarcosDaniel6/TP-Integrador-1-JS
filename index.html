@@ -30,7 +30,7 @@
                 <a class="nav-link" href="#">Los oradores</a>
                 <a class="nav-link" href="#">El lugar y la fecha</a>
                 <a class="nav-link" href="#">Conviértete en orador</a>
-                <a class="nav-link verde" href="#">Comprar tickets</a>
+                <a class="nav-link verde" href="#tickets">Comprar tickets</a>
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
                     nivel que tenemos para ti. Te esperamos!</p>
                 <div class="buttonarea">
                     <a class="btn btn-transparent" href="#">Quiero ser orador</a>
-                    <a class="btn btn-solid" href="#">Comprar tickets</a>
+                    <a class="btn btn-solid" href="#tickets">Comprar tickets</a>
                 </div>
             </div>
     </div>
@@ -138,6 +138,68 @@
     </form>
 </section>
 
+<!-- seccion de compra de Tickets -->
+<section id="tickets" class="tickets">
+    <div class="container-tickets">
+        <div class="tickets-category">
+            <div class="estudiante">
+                <h3>Estudiante</h3>
+                <h5>Tiene un descuento</h5>
+                <br>
+                <h2>80%</h2>
+                <br>
+                <h6>* presentar documentación</h6>
+            </div>
+            <div class="trainee">
+                <h3>Trainee</h3>
+                <h5>Tiene un descuento</h5>
+                <br>
+                <h2>50%</h2>
+                <br>
+                <h6>* presentar documentación</h6>
+            </div>
+            <div class="junior">
+                <h3>Junior</h3>
+                <h5>Tiene un descuento</h5>
+                <br>
+                <h2>15%</h2>
+                <br>
+                <h6>* presentar documentación</h6>
+            </div>
+        </div>
+        <div class="tickets-text">
+            <h6>VENTA</h6>
+            <h1>VALOR DE TICKET $200</h1>
+        </div>
+
+        <form class="ticketsForm" action="">
+            <div class="tickets-form">
+                <input type="text" class="ticketsFirstName" name="Nombre" placeholder="Nombre">
+                <input type="text" class="ticketsLastName" name="Apellido" placeholder="Apellido">
+                <input type="email" class="ticketsEmail" name="Email" placeholder="Correo">
+                <div class="labelcantidadDeTickets">
+                    <label for="Cantidad">Cantidad</label>
+                    <input id="cantidadDeTickets" type="text" class="cantidadDeTickets" name="Cantidad"
+                        placeholder="Cantidad">
+                </div>
+                <div class="labelcategoria">
+                    <label for="categoriaTicket">Categoria</label>
+                    <select name="categoriaTicket" class="categoriaTicket">
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
+                    </select>
+                </div>
+                <output class="resultado"><span class="ticketsValue">Total a Pagar: $</span></output>
+                <br>
+                <button id="borrar" type="reset" class="btnTickets" name="Borrar">Borrar</button>
+                <button id="resumen" class="btnTickets" name="Resumen">Resumen</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
 <!-- Pie de página -->
 
 <footer class="pie-pagina">
@@ -151,6 +213,8 @@
         <a class="nav-link" href="#">Estudiantes</a>
     </div>
 </footer>
+
+<script src="./JS/compraTickets.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
